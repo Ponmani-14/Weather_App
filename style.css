@@ -1,0 +1,68 @@
+/* Fullscreen Background */
+ body {
+      overflow: hidden;
+      height: 100vh;
+      background: linear-gradient(to bottom, #FFD700, #87CEEB);
+
+    }
+    
+ #weatherVideo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    /* Card UI */
+    #weather-card {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(8px);
+      border-radius: 15px;
+      padding: 30px;
+      width: 350px;
+    }
+
+   
+#weather-bg {
+  height: 100vh;
+  width: 100%;
+  background: url("images/default.png");
+  background-size: cover;
+  background-position: center;
+  transition: background 1s ease-in-out;
+}
+
+/* Center Card */
+.weather-card {
+  width: 400px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 18px;
+  transition: all 0.5s ease;
+  backdrop-filter: blur(10px);
+}
+
+/* Animated Weather Icon */
+.weather-icon {
+  width: 140px;
+  animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+/* Fade Animation */
+.result-area {
+  animation: fadeIn 0.7s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

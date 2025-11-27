@@ -1,0 +1,15 @@
+# Ignore backend node modules
+backend/node_modules/
+
+# Ignore backend environment file
+backend/.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
